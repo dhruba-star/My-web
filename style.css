@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fce4ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #880e4f;
+}
+
+/* Shared form styles for index.html */
+form {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+input[type="text"] {
+  font-size: 18px;
+  padding: 10px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+button {
+  background: #f06292;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ec407a;
+}
+
+/* main.html styles */
+body.main {
+  flex-direction: column;
+  background: #ffebee;
+  position: relative;
+  overflow: hidden;
+}
+
+#nameDisplay {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(255,255,255,0.8);
+  color: #880e4f;
+  font-family: 'Dancing Script', cursive;
+}
+
+#slideshow {
+  width: 80vw;
+  height: 60vh;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(136, 14, 79, 0.4);
+  overflow: hidden;
+  position: relative;
+  margin: 80px auto 20px;
+}
+#slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+#slideshow img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+#lyrics {
+  width: 80vw;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  position: relative;
+  padding: 10px;
+  border-radius: 50% / 100px;
+  border: 2px solid #880e4f;
+  box-shadow: 0 0 12px #f06292;
+  background: #fff0f6;
+  font-weight: 600;
+  user-select: none;
+  margin: 0 auto 30px;
+  font-family: 'Dancing Script', cursive;
+}
+
+#lyrics span {
+  display: inline-block;
+  transform-origin: 50% 150px;
+  position: relative;
+}
